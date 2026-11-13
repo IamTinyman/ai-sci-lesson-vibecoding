@@ -1,0 +1,42 @@
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local credentials and editor state
+.env
+.env.*
+!.env.example
+.DS_Store
+.idea/
+.vscode/
+
+# Dataset files stay on the server and are never committed
+/data/*
+!/data/README.md
+!/data/manifest.csv
+!/data/raw/
+!/data/processed/
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+
+# Large model and cache artifacts
+*.parquet
+*.feather
+*.pkl
+*.joblib
+*.model
+*.ckpt
+*.pt
+*.pth
+
+# Project-local runtime caches and temporary files
+/.cache/
+/.tmp/
